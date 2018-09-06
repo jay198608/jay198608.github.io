@@ -20,7 +20,7 @@
 <meta property="og:description" content="一、建立 Stackdriver 帳號開始監控前須先建立Stackdriver帳號 Monitoring Overview 安裝 monitoring agent 與 logging agentWindows 下載連結Monitoring aggentLogging agent Linux指令123456# To install the Stackdriver monitoring agent:$">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://yoursite.com/img/Account-1.png">
-<meta property="og:updated_time" content="2018-09-06T14:39:51.770Z">
+<meta property="og:updated_time" content="2018-09-06T16:07:13.483Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Stackdriver 監控">
 <meta name="twitter:description" content="一、建立 Stackdriver 帳號開始監控前須先建立Stackdriver帳號 Monitoring Overview 安裝 monitoring agent 與 logging agentWindows 下載連結Monitoring aggentLogging agent Linux指令123456# To install the Stackdriver monitoring agent:$">
@@ -71,13 +71,13 @@
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">Home</a>
+                                    <a class="main-nav-list-link" href="/">Inici</a>
                                 </li>
                             
                                         
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
                                 </li>
                             
                         </ul>
@@ -85,7 +85,7 @@
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -106,8 +106,8 @@
         TRANSLATION: {
             POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'categories',
+            TAGS: 'etiquetes',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -133,7 +133,7 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    uncategorized
+    Sense categoria
     </h1>
 </div>
                         <div class="main-body-content">
@@ -168,8 +168,11 @@
 <p><strong>Monitoring Overview</strong><br><img src="/img/Monitoring_Overview.png" alt=""></p>
 <h4 id="安裝-monitoring-agent-與-logging-agent"><a href="#安裝-monitoring-agent-與-logging-agent" class="headerlink" title="安裝 monitoring agent 與 logging agent"></a>安裝 monitoring agent 與 logging agent</h4><p><strong>Windows 下載連結</strong><br><a href="https://repo.stackdriver.com/windows/StackdriverMonitoring-GCM-46.exe" target="_blank" rel="noopener">Monitoring aggent</a><br><a href="https://dl.google.com/cloudagents/windows/StackdriverLogging-v1-8.exe" target="_blank" rel="noopener">Logging agent</a></p>
 <h4 id="Linux指令"><a href="#Linux指令" class="headerlink" title="Linux指令"></a>Linux指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># To install the Stackdriver monitoring agent:</span><br><span class="line">$ curl -sSO https://dl.google.com/cloudagents/install-monitoring-agent.sh</span><br><span class="line">$ sudo bash install-monitoring-agent.sh</span><br><span class="line"># To install the Stackdriver logging agent:</span><br><span class="line">$ curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh</span><br><span class="line">$ sudo bash install-logging-agent.sh</span><br></pre></td></tr></table></figure>
-<h2 id="二、建立Group"><a href="#二、建立Group" class="headerlink" title="二、建立Group"></a>二、建立Group</h2><p><img src="/img/Group.png" alt=""></p>
-<h2 id="三、Uptime-Check"><a href="#三、Uptime-Check" class="headerlink" title="三、Uptime Check"></a>三、Uptime Check</h2><p>透過從世界各地來驗證服務的可用性，經過的地區有維吉尼亞州、奧勒岡州、愛荷華州、比利時、新加坡、聖保羅，每個Stackdriver帳戶最多可建立100個Uptime Checks，第一次建立需等候一段時間。以下以驗證HTTP來作示範。<br><img src="/img/UptimeCheck_Dashboard.png" alt=""></p>
+<h2 id="二、Resources-Metrics-Explorer"><a href="#二、Resources-Metrics-Explorer" class="headerlink" title="二、Resources - Metrics Explorer"></a>二、Resources - Metrics Explorer</h2><p><strong>Metric設定</strong><br>Resource types：監控的資源<br>Select a metric：選擇監控該資源的指標<br><img src="/img/UptimeCheck_Dashboard.png" alt=""></p>
+<p><strong>View Options</strong><br>依喜好調整圖表的模式、參考值、歷史資料…等設定。<br><img src="/img/Resources_Metrics Explorer_Viewoptions.png" alt=""></p>
+<p><strong>調整線圖模型</strong><br><img src="/img/Resources_Metrics Explorer_Line.png" alt=""></p>
+<h2 id="三、建立Group"><a href="#三、建立Group" class="headerlink" title="三、建立Group"></a>三、建立Group</h2><p><img src="/img/Resources_Metrics Explorer_Metric.png" alt=""></p>
+<h2 id="四、Uptime-Check"><a href="#四、Uptime-Check" class="headerlink" title="四、Uptime Check"></a>四、Uptime Check</h2><p>透過從世界各地來驗證服務的可用性，經過的地區有維吉尼亞州、奧勒岡州、愛荷華州、比利時、新加坡、聖保羅，每個Stackdriver帳戶最多可建立100個Uptime Checks，第一次建立需等候一段時間。以下以驗證HTTP來作示範。<br><img src="/img/UptimeCheck_Dashboard.png" alt=""></p>
 <ol>
 <li><p>建立VM（Linux）並允許http、https流量</p>
 </li>
@@ -181,9 +184,9 @@
 <li><p>建立Uptime Check，Check Type選擇HTTP，監控範圍選擇Group後可先Test看是否可運作。<br><img src="/img/Uptimecheck.png" alt=""></p>
 </li>
 </ol>
-<h2 id="四、新增告警"><a href="#四、新增告警" class="headerlink" title="四、新增告警"></a>四、新增告警</h2><p><img src="/img/Alert_Set.png" alt=""><br><strong>Conditions</strong>：設定監控instance、LB…等條件<br><strong>Notifications</strong>：告警通知可選擇Email、簡訊、Slack…等通知方式<br><strong>Documentation</strong>：設定當觸發告警時，發送email時的訊息內容<br><strong>Name this policy</strong>：命名該告警政策名稱<br><strong>Conditions</strong>：設定監控inst</p>
+<h2 id="五、新增告警"><a href="#五、新增告警" class="headerlink" title="五、新增告警"></a>五、新增告警</h2><p><img src="/img/Alert_Set.png" alt=""><br><strong>Conditions</strong>：設定監控instance、LB…等條件<br><strong>Notifications</strong>：告警通知可選擇Email、簡訊、Slack…等通知方式<br><strong>Documentation</strong>：設定當觸發告警時，發送email時的訊息內容<br><strong>Name this policy</strong>：命名該告警政策名稱<br><strong>Conditions</strong>：設定監控inst</p>
 <p><strong>告警mail</strong><br><img src="/img/Alert_mail.png" alt=""></p>
-<h2 id="五、建立Dashboards"><a href="#五、建立Dashboards" class="headerlink" title="五、建立Dashboards"></a>五、建立Dashboards</h2><p>進入Dashboard點選「ADD CHART」，在METRIC選擇「Resoruce type」與「Metric」並save即完成一張圖表。<br><img src="/img/dashboard.png" alt=""></p>
+<h2 id="六、建立Dashboards"><a href="#六、建立Dashboards" class="headerlink" title="六、建立Dashboards"></a>六、建立Dashboards</h2><p>進入Dashboard點選「ADD CHART」，在METRIC選擇「Resoruce type」與「Metric」並save即完成一張圖表。<br><img src="/img/dashboard.png" alt=""></p>
 <p><strong>變更Dashboard名稱</strong><br><img src="/img/dashboard-2.png" alt=""></p>
 <p><strong>查看圖表</strong><br><img src="/img/dashboard-1.png" alt=""></p>
 <p><strong>公開分享圖表</strong><br>分享的圖表URL可直接分享給其他人<br><img src="/img/dashboard-share.png" alt=""></p>
@@ -196,7 +199,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2018/08/06/Stackdriver-監控/" data-id="cjlqohqjn0000w097lhq0hykc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/08/06/Stackdriver-監控/" data-id="cjlqrm8yt0001lc97svfmx8pc" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -276,7 +279,7 @@
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>follow:</p>
+        <p>seguir:</p>
         <ul class="social-links">
             
                 
@@ -335,7 +338,7 @@
     
     
         <a href="/2018/07/27/Stackdriver簡介/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
+        <strong class="article-nav-caption">antic</strong>
         <p class="article-nav-title">Stackdriver介紹</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
@@ -405,7 +408,7 @@
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">arxius</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li></ul>
         </div>
