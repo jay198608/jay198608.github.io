@@ -20,7 +20,7 @@
 <meta property="og:description" content="一、建立 Stackdriver 帳號開始監控前須先建立Stackdriver帳號 Monitoring Overview 安裝 monitoring agent 與 logging agentWindows 下載連結Monitoring aggentLogging agent Linux指令123456# To install the Stackdriver monitoring agent:$">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://yoursite.com/img/Account-1.png">
-<meta property="og:updated_time" content="2018-09-06T16:13:34.927Z">
+<meta property="og:updated_time" content="2018-11-15T14:51:17.234Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Stackdriver 監控">
 <meta name="twitter:description" content="一、建立 Stackdriver 帳號開始監控前須先建立Stackdriver帳號 Monitoring Overview 安裝 monitoring agent 與 logging agentWindows 下載連結Monitoring aggentLogging agent Linux指令123456# To install the Stackdriver monitoring agent:$">
@@ -184,8 +184,27 @@
 <li><p>建立Uptime Check，Check Type選擇HTTP，監控範圍選擇Group後可先Test看是否可運作。<br><img src="/img/Uptimecheck.png" alt=""></p>
 </li>
 </ol>
-<h2 id="五、新增告警"><a href="#五、新增告警" class="headerlink" title="五、新增告警"></a>五、新增告警</h2><p><img src="/img/Alert_Set.png" alt=""><br><strong>Conditions</strong>：設定監控instance、LB…等條件<br><strong>Notifications</strong>：告警通知可選擇Email、簡訊、Slack…等通知方式<br><strong>Documentation</strong>：設定當觸發告警時，發送email時的訊息內容<br><strong>Name this policy</strong>：命名該告警政策名稱</p>
-<p><strong>告警mail</strong><br><img src="/img/Alert_mail.png" alt=""></p>
+<h2 id="五、新增告警"><a href="#五、新增告警" class="headerlink" title="五、新增告警"></a>五、新增告警</h2><p>以 Email 與 SLACK 進行測試</p>
+<ol>
+<li>Slack先建立頻道<br><img src="/img/alert00.png" alt=""></li>
+</ol>
+<ol start="2">
+<li><p>至GCP專案設定SLACK授權<br><img src="/img/alert01.png" alt=""><br><img src="/img/alert02.png" alt=""><br><img src="/img/alert03.png" alt=""></p>
+</li>
+<li><p>點「Test Connection」測試是否可連接到Slack<br><img src="/img/alert04.png" alt=""></p>
+</li>
+<li><p>連接成功按「Save」<br><img src="/img/alert05.png" alt=""></p>
+</li>
+<li><p>Alert新增 Notification，設定Email、Slack為告警管道<br><img src="/img/alert06.png" alt=""><br><img src="/img/alert07.png" alt=""></p>
+</li>
+</ol>
+<h4 id="Alert設定相關說明："><a href="#Alert設定相關說明：" class="headerlink" title="Alert設定相關說明："></a>Alert設定相關說明：</h4><p><strong>Conditions</strong>：設定監控instance、LB…等條件<br><strong>Notifications</strong>：告警通知可選擇Email、簡訊、Slack…等通知方式<br><strong>Documentation</strong>：設定當觸發告警時，發送email時的訊息內容<br><strong>Name this policy</strong>：命名該告警政策名稱</p>
+<ol start="6">
+<li>GCP發送Slack告警<br><img src="/img/alert08.png" alt=""></li>
+</ol>
+<ol start="7">
+<li>GCP發送Email告警<br><img src="/img/alert09.png" alt=""></li>
+</ol>
 <h2 id="六、建立Dashboards"><a href="#六、建立Dashboards" class="headerlink" title="六、建立Dashboards"></a>六、建立Dashboards</h2><p>進入Dashboard點選「ADD CHART」，在METRIC選擇「Resoruce type」與「Metric」並save即完成一張圖表。<br><img src="/img/dashboard.png" alt=""></p>
 <p><strong>變更Dashboard名稱</strong><br><img src="/img/dashboard-2.png" alt=""></p>
 <p><strong>查看圖表</strong><br><img src="/img/dashboard-1.png" alt=""></p>
@@ -199,7 +218,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2018/08/06/Stackdriver-監控/" data-id="cjlqruyig0000v897zr5241p8" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://yoursite.com/2018/08/06/Stackdriver-監控/" data-id="cjoit3mgd00009g970ril2muc" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
